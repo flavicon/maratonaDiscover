@@ -240,12 +240,12 @@ td.expense {
 
     opacity: 0;
     visibility: hidden;
-    transition: 1s;
 }
 
 .modal-overlay.active {
     opacity: 1;
     visibility: visible;
+    transition: 1s;
 }
 
 .modal {
