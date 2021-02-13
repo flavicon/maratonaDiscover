@@ -1,8 +1,8 @@
-/*---------GLOBAL------------*/
+/*---------Global------------*/
 :root {
-    --dark-blue: #363f5f;
-    --green: #49aa26;
-    --light-green: #3dd705;
+    --dark-purple: #5E239D;
+    --green: #42B34A;
+    --light-green: #27dc5a;
     --red: #e92929;
 }
 
@@ -39,17 +39,17 @@ body {
     margin: auto;
 }
 
-/*-----------TITULOS-----------*/
+/*-----------Titles-----------*/
 
 h2 {
     margin-top: 3.2rem;
     margin-bottom: 0.8rem;
-    color: var(--dark-blue);
+    color: var(--dark-purple);
 
     font-weight: normal;
 }
 
-/*-------LINKS AND BUTTONS-----*/
+/*-------Links and Buttons-----*/
 
 a {
     color: var(--green);
@@ -89,7 +89,6 @@ button:hover {
     color: var(--red);
     border: 2px var(--red) solid;
     border-radius: 0.25rem;
-
     height: 50px;
 
     display: flex;
@@ -104,10 +103,10 @@ button:hover {
 }
 
 
-/*---------CABEÇALHO-----------*/
+/*-------------Header------------*/
 
 header {
-    background: #2d4a22;
+    background: #0E5823;
     padding: 2rem 0 10rem;
     text-align: center;
 }
@@ -117,10 +116,10 @@ header {
     font-weight: 100;
 }
 
-/*-------------BALANCE----------*/
+/*-------------Balance----------*/
 
 #balance {
-    margin-top: -8rem;
+    margin-top: -6rem;
 }
 
 #balance h2 {
@@ -128,7 +127,7 @@ header {
     margin-top: 0;
 }
 
-/*-------------CARDS------------*/
+/*-------------Cards------------*/
 
 .card { 
     background: white;
@@ -137,9 +136,17 @@ header {
 
     margin-bottom: 2rem;
 
-    color: var(--dark-blue);
+    color: var(--dark-purple);
     
-    transition: 1s;
+    transition: 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+
+    box-shadow: 2px 0 15px #4d5382;
 }
 
 .card h3 {
@@ -161,13 +168,9 @@ header {
     color: white;
 }
 
-.card:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
 
-/*-------------TABLES----------*/
-#transaction {
+/*-------------Table----------*/
+.table-transactions {
     display: block;
     width: 100%;
     overflow-x: auto;
@@ -177,6 +180,10 @@ header {
     width: 100%;
     border-spacing: 0 0.5rem;
     color: #969cb3;
+}
+
+#data-table img:hover {
+    cursor: pointer;
 }
 
 table thead tr th:first-child,
@@ -191,7 +198,6 @@ table tbody tr td:last-child {
 
 table thead th {
     background: white;
-
     font-weight: normal;
     padding: 1rem 2rem;
     text-align: left;
@@ -212,11 +218,11 @@ table tbody tr:hover {
 }
 
 td.description {
-    color: var(--dark-blue)
+    color: var(--dark-purple)
 }
 
 td.income {
-    color: #12a454;
+    color: var(--green);
 }
 
 td.expense {
@@ -246,6 +252,7 @@ td.expense {
     opacity: 1;
     visibility: visible;
     transition: 1s;
+    z-index: 1;
 }
 
 .modal {
@@ -254,6 +261,8 @@ td.expense {
     position: relative;
     width: 90%;
     max-width: 500px;
+
+    border-radius: 0.5rem;
 }
 
 /*-------------Form------------*/
@@ -294,12 +303,12 @@ input {
     width: 48%;
 }
 
-/*-------------FOOTER----------*/
+/*-------------Footer----------*/
 
 footer {
     text-align: center;
     padding: 4rem 0 2rem;
-    color: var(--dark-blue);
+    color: var(--dark-purple);
 
     opacity: 0.6;
 }
