@@ -1,9 +1,9 @@
 /*---------Global------------*/
 :root {
-    --dark-purple: #5E239D;
-    --green: #42B34A;
-    --light-green: #27dc5a;
-    --red: #e92929;
+    --dark-purple: #381D2A;
+    --green: #137C31;
+    --light-green: #22AA4D;
+    --red: #BB0A21;
 }
 
 * {
@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    background: #f0f2f5;
+    background: #EEF5FC;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -106,7 +106,7 @@ button:hover {
 /*-------------Header------------*/
 
 header {
-    background: #0E5823;
+    background: #1E2571;
     padding: 2rem 0 10rem;
     text-align: center;
 }
@@ -123,14 +123,14 @@ header {
 }
 
 #balance h2 {
-    color: white;
+    color: #fff;
     margin-top: 0;
 }
 
 /*-------------Cards------------*/
 
 .card { 
-    background: white;
+    background: #fff;
     padding: 1.5rem 2rem;
     border-radius: 0.25rem;
 
@@ -146,7 +146,7 @@ header {
     transition: 0.5s;
     cursor: pointer;
 
-    box-shadow: 2px 0 15px #4d5382;
+    box-shadow: 3px 8px 4px #141414;
 }
 
 .card h3 {
@@ -165,7 +165,7 @@ header {
 
 .card.total {
     background: var(--green);
-    color: white;
+    color: #fff;
 }
 
 
@@ -197,7 +197,7 @@ table tbody tr td:last-child {
 }
 
 table thead th {
-    background: white;
+    background: #fff;
     font-weight: normal;
     padding: 1rem 2rem;
     text-align: left;
@@ -205,7 +205,7 @@ table thead th {
 }
 
 table tbody td {
-    background: white;
+    background: #fff;
     padding: 1rem 2rem;
 }
 
@@ -226,7 +226,7 @@ td.income {
 }
 
 td.expense {
-    color: #e92929;
+    color: var(--red);
 }
 
 /*---------Modal---------------*/
@@ -256,7 +256,7 @@ td.expense {
 }
 
 .modal {
-    background: #f0f2f5;
+    background: #EEF5FC;
     padding: 2.4rem;
     position: relative;
     width: 90%;
